@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastTrack Transport</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+    }
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0066cc;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FastTrack Transport</h1>
+    <p>Your reliable travel partner</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book Now</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>
+      FastTrack Transport is your trusted travel companion, offering safe, comfortable, and affordable journeys.
+      Whether you’re booking a bus for a group trip or a car for personal travel, we ensure punctuality and convenience.
+      Our fleet is modern, our drivers are professional, and our customer service is available 24/7 to assist you.
+      Experience smooth travel with us — where every journey feels effortless.
+    </p>
+  </section>
+
+  <section id="services" class="services">
+    <div class="card">
+      <img src="https://copilot.microsoft.com/th/id/BCO.e6e7695c-a4da-4f07-aec9-1a4651b598a6.png" alt="Bus Service">
+      <h3>Bus Services</h3>
+      <p>Modern buses with comfortable seating and daily routes across major cities.</p>
+      <a href="#booking" class="btn">Book Bus</a>
+    </div>
+    <div class="card">
+      <img src="https://copilot.microsoft.com/th/id/BCO.ac597cc9-182d-499b-bf6b-68c690eafc20.png" alt="Car Service">
+      <h3>Car Booking</h3>
+      <p>Luxury cars for personal and business travel, available anytime.</p>
+      <a href="#booking" class="btn">Book Car</a>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Ride</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" required>
+        <option value="">--Choose--</option>
+        <option value="bus">Bus</option>
+        <option value="car">Car</option>
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" required>
+
+      <label for="drop">Drop Location:</label>
+      <input type="text" id="drop" required>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Options</h2>
+    <p>Choose your preferred payment method for a smooth booking experience.</p>
+    <div class="services">
+      <div class="card">
+        <a href="https://www.visa.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Credit Card">
+        </a>
+        <h3>Credit / Debit Card</h3>
+        <p>Pay securely using Visa, Mastercard, or RuPay cards.</p>
+      </div>
+      <div class="card">
+        <a href="https://www.paypal.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/PayPal_logo.png" alt="PayPal">
+        </a>
+        <h3>PayPal</h3>
+        <p>Use your PayPal account for quick international payments.</p>
+      </div>
+      <div class="card">
+        <a href="https://www.bhimupi.org.in" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/UPI-Logo-vector.svg" alt="UPI">
+        </a>
+        <h3>UPI</h3>
+        <p>Instant payments via Google Pay, PhonePe, or BHIM UPI.</p>
+      </div>
+      <div class="card">
+        <a href="https://www.example.com/cash-payment" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Indian_Rupee_symbol.svg" alt="Cash">
+        </a>
+        <h3>Cash Payment</h3>
+        <p>Pay directly to the driver at the time of travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@fasttrack.com | Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FastTrack Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const service = document.getElementById('service').value;
+      alert(`Thank you ${name}! Your ${service} booking has been submitted.`);
+    });
+  </script>
+</body>
+</html>
